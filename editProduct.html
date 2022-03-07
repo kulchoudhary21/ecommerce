@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <link
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url("images/productedit-bg.jpg");
+      }
+      main {
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        border: 5px;
+        box-sizing: content-box;
+        border-style: solid;
+        border-radius: 20px;
+        border-color: skyblue;
+        border-width: 100%;
+        margin: 10px;
+        padding: 20px;
+        padding-top: 0%;
+        padding-left: 30px;
+        padding-right: 90px;
+        position: absolute;
+        margin-left: 90px;
+        background-color: wheat;
+      }
+      label {
+        font-size: medium;
+        margin-left: 90px;
+      }
+      input[type="text"],
+      input[type="number"] {
+        padding: 10px;
+        padding-left: 10px;
+        padding-right: 90px;
+        margin: 10px;
+        margin-bottom: 30px;
+        border-style: solid;
+        border-radius: 5%;
+        border-color: skyblue;
+        display: block;
+        position: relative;
+        margin-left: 90px;
+        font-size: medium;
+      }
+      button {
+        padding: 10px;
+        margin: 10px;
+        margin-top: 10px;
+        justify-content: center;
+        border-style: solid;
+        border-radius: 5%;
+        border-color: skyblue;
+        margin-left: 90px;
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+      .container.h3 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .icon {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border-style: solid;
+        border-color: #ffffff;
+        box-shadow: 0 0 8px 3px #b8b8b8;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 160px;
+      }
+      .icon img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        border-color: skyblue;
+      }
+
+      .icon i {
+        position: absolute;
+        top: 20px;
+        right: -7px;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        color: cornflowerblue;
+        box-shadow: 0 0 8px 3px #b8b8b8;
+      }
+      #upload {
+        justify-content: center;
+        border-style: solid;
+        border-radius: 5%;
+        border-color: skyblue;
+        margin-left: 90px;
+
+        margin-bottom: 30px;
+      }
+      #namebox {
+        padding-left: 10px;
+        padding-right: 90px;
+        margin: 10px;
+        border-style: solid;
+        border-radius: 5%;
+        border-color: skyblue;
+        display: block;
+        position: relative;
+        margin-left: 90px;
+        font-size: medium;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div>
+          <h3>Edit Product</h3>
+        </div>
+        <div class="icon">
+          <img id="img" />
+          <i class="fa fa-edit" id="select"></i>
+        </div>
+        <div>
+          <button id="upload" type="button" class="uploadbtn">
+            update image
+          </button>
+          <label id="upProgress"></label>
+        </div>
+        <div>
+          <label>Product Title</label><br />
+          <input type="text" id="title" />
+        </div>
+        <div>
+          <label>Quantity</label><br />
+          <input type="number" id="quantity" />
+        </div>
+        <div>
+          <label>Description</label><br />
+          <input type="text" id="description" />
+        </div>
+        <div>
+          <button type="button" id="editButton">Save</button>
+        </div>
+        <div>
+          <h3 id="msg" style="color: red"></h3>
+          <h3 id="msg1" style="color: green"></h3>
+        </div>
+      </div>
+    </main>
+    <script src="js/editProduct.js" type="module"></script>
+  </body>
+</html>
