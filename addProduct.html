@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <style>
+      body {
+        background-image: url("images/addproduct-bg1.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      form {
+        border: 3px solid #f1f1f1;
+        padding: 30px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 30px;
+        background-color: bisque;
+        border-style: solid;
+        border-width: 5px;
+        box-shadow: 0 0 8px 3px #b8b8b8;
+        border-color: blue;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        padding-top: 20px;
+        width: 100%;
+      }
+      input[type="file"],
+      input[type="password"],
+      input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 20px;
+        border-color: blue;
+        border-style: solid;
+      }
+      input[type="number"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 20px;
+        border-color: blue;
+        border-style: solid;
+      }
+      .addButton {
+        background-color: #04aa6d;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 30%;
+        margin-top: 20px;
+        border-radius: 20px;
+        border-color: blue;
+        border-style: solid;
+      }
+      label {
+        margin: 10px;
+        padding: 20px;
+      }
+      span {
+        background-color: grey;
+        color: white;
+        width: 100%;
+        font-size: x-large;
+      }
+      img {
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        border-radius: 20px;
+        border-color: blue;
+        border-style: solid;
+      }
+    </style>
+    <script src="js/addProduct.js" type="module"></script>
+  </head>
+  <body>
+    <form>
+      <center><h2>Add Product</h2></center>
+      <div class="container">
+        <label for="Name"><b>Product Title</b></label>
+        <input type="text" placeholder="" name="Name" id="title" required />
+        <label for="Name"><b>Product Description</b></label
+        ><br />
+        <input type="text" name="Name" id="description" required />
+        <label for="uname"><b>Quantity</b></label>
+        <input type="number" name="uname" id="quantity" required />
+        <div>
+          <label><b>Upload Image</b></label>
+          <input
+            type="text"
+            id="namebox"
+            required
+            placeholder="unique image name"
+          />
+          <img id="myimg" />
+          <label id="upProgress"></label>
+          <button id="select" type="button">select</button>
+          <button id="upload" type="button">upload</button>
+        </div>
+        <div>
+          <div>
+            <h3 id="msg" style="color: red"></h3>
+          </div>
+          <button type="button" class="addButton" id="btnClick">
+            Add Product
+          </button>
+        </div>
+        <h3 id="msg1" style="color: green"></h3>
+      </div>
+    </form>
+  </body>
+</html>
